@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var str="India is the World`s Oldest Country.";
+        document.write("String is... <b>"+str+"</b>");
+        document.write("<br><b>Length of string is </b>"+(str.length));
+        let chrat=str.charAt(7);
+        document.write("<br><b>Charector charAt(7)</b>..."+(chrat));
+        let cat=str.at(9);
+        document.write("<br><b>Charector index at(8)</b> ..."+(cat));
+        var str1="abcdefgABCDEFG";
+        for(var i=0;i<str1.length;i++)
+        { let ch=str1.charCodeAt(i);
+            let cat1=str1.at(i);
+           document.write("<br><b>str1 char</b>"+i+"..."+cat1+"...."+ch);
+        }
+        let upc=str.toUpperCase();
+        document.write("<br><br><b>String in Uppercase </b><i>"+upc+"</i>");
+        let loc=str.toLowerCase();
+        document.write("<br><br><b>String in Lowercase </b><i>"+loc+"</i>");
+
+        let result=str.concat(str1);
+        document.write("<br><br>String after concat ...<b><i>"+result+"</i></b>");
+
+        let s1=" gggfgh ";
+        let ss1=s1.trim();
+        document.write("<br>trim method......"+ss1);
+        let substr=str.substring(4,15);
+        document.write("<br>"+substr);
+        let strslice=str.slice(13);
+        document.write("<br>"+strslice);
+        document.write(" .............==============...............");
+        var strr="India , is , the World`s Oldest Country.";
+        var words=strr.split(",");
+
+        for(var j=0;j<words.length;j++)
+        {
+            document.write("<br"+j+"...."+words[j]);
+        }
+    </script>
+</body>
+</html>

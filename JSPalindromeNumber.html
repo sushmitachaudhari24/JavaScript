@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Palinedrome Number</title>
+</head>
+<body>
+    <script type="text/javaScript">
+        document.write("Check Number is Palindrome or not");
+        var num=12321;
+        var temp=num;
+        var rev=0;
+        while(temp>0)
+       {
+         var rem=temp%10;
+         rev=rev*10+rem;
+         temp=Math.floor(temp/10);
+       }  
+       document.write("<br>Number is "+num+" Rev is"+rev);
+       if(rev==num)
+       {
+        document.write("<br>Number is Palindrome");
+       }
+       else
+       {
+        document.write("<br>Number is not Palindrome");
+       }
+      
+    </script>
+</body>
+</html>

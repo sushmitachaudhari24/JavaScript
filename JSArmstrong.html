@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmStrpng Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num=153;
+        var count=0,rem,sum=0,temp=num;
+        while(temp>0)
+        {
+          temp=Math.floor(temp/10);
+          count++;
+        }
+        temp=num;
+        while(temp>0)
+        {
+            rem=temp%10;
+            var p=1;
+            for(var i=1;i<=count;i++)
+            {
+                p=p*rem;
+            }
+            sum=sum+p;
+            temp=Math.floor(temp/10);
+        }
+        if(num==sum)
+        {
+            document.write(num+" is Armstrong<br>");
+        }
+        else{
+            document.write(num+" is Not Armstrong");
+        }
+    </script>
+</body>
+</html>

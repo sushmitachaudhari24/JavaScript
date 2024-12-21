@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Input Control Using DOM</title>
+    <style>
+      .btn{
+        padding: 10px;
+        background-color: green;
+        color: white;
+      }
+    </style>
+    <script type="text/javaScript">
+      function clickme()
+      {
+        let cont=document.getElementById("d");
+      let ip=document.createElement("input");
+       ip.setAttribute("type","text");
+       ip.setAttribute("name","text");
+       ip.setAttribute("placeholder","Enter Here Value");
+       ip.style.width="100px";
+       ip.style.padding="10px";
+       ip.style.borderRadius="10px";
+          cont.append(ip);
+          cont.style.backgroundColor="Pink";
+      }
+    </script>
+</head>
+<body>
+    <input type="button" class="btn" onclick="clickme()" value="Create input Box"><br><br>
+    <div id="d" >
+
+    </div> 
+</body>
+</html>

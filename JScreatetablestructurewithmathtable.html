@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create table by clicking btn</title>
+    <style>
+        .box{
+            width: 100%;
+            margin: auto;
+            height: 100%;
+        }
+        #txt{
+            width: 200px;
+            padding: 10px;
+            outline: none;
+        }
+        #btn{
+            padding: 10px;
+            background-color: gray;
+            color: pink;
+            border: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function clickme()
+        {
+            var num=parseInt(document.getElementById("txt").value);
+              var container=document.getElementById("cont");
+              container.innerHTML=" ";
+              var table=document.createElement("table");
+              table.width="70%";
+              table.border="3";
+              table.height="70%";
+              table.bgColor="black";
+              table.style.color="yellow";
+              var hrow=document.createElement("tr");
+                  hrow.bgColor="crimson";
+              var thnum=document.createElement("th");
+              thnum.innerHTML="Number("+num+")";
+              hrow.append(thnum);
+              var tmul=document.createElement("th");
+              tmul.innerHTML="*";
+              hrow.append(tmul);
+              var thead=document.createElement("th");
+              thead.innerHTML="Iteration";
+              hrow.append(thead);
+              var theql=document.createElement("th");
+              theql.innerHTML="=";
+              hrow.append(theql);
+              var thresult=document.createElement("th");
+              thresult.innerHTML="Result";
+              hrow.append(thresult);
+              table.append(hrow);
+               for(var i=1;i<=10;i++)
+               {
+                let trow=document.createElement("tr");
+                trow.bgColor="pink";
+                trow.style.color="green"
+                let col1=document.createElement("td");
+                col1.innerHTML=""+i;
+                trow.append(col1);
+                trow.align="center";
+                let col2=document.createElement("td");
+                col2.innerHTML="*";
+                trow.append(col2);
+                let col3=document.createElement("td");
+                col3.innerHTML=""+num;
+                trow.append(col3);
+                let col4=document.createElement("td");
+                col4.innerHTML="=";
+                trow.append(col4);
+                let col5=document.createElement("td");
+                col5.innerHTML=""+(i*num);
+                trow.append(col5);
+                table.append(trow);
+               }
+              container.append(table);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="txt" >
+        <input type="button" id="btn" value="Create table and print" onclick="clickme()">
+        <div id="cont">
+
+        </div>
+    </div>
+</body>
+</html>

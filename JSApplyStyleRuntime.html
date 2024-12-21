@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply style on elements runtime</title>
+    <script type="text/javascript">
+        function clickme()
+        {
+            var hid=document.getElementById("h");
+            hid.style.borderStyle="solid";
+           // hid.style.border="2px";
+            hid.style.color="green";
+            hid.style.borderRadius="10px";
+            hid.style.width="400px";
+            hid.style.backgroundColor="white"
+            hid.style.padding="10px";
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <input type="button" onclick="clickme()"  value="JS runtime add Style"><br><br>
+        <h2 id="h">Good Morning India</h2>
+    </div>
+</body>
+</html>

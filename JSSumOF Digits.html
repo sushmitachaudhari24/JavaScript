@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>SumOfDigits</title>
+</head>
+<body>
+    <script type="text/javaScript">
+      var num=1234;
+      var sum=0;
+      document.write("Number is "+num);
+      while(num>0)
+      {
+        var rem=num%10;
+        sum=sum+rem;
+        num=Math.floor(num/10);
+      }
+      document.write("<br>Sum of digits are "+sum);
+    </script>
+</body>
+</html>

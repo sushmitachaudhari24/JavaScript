@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSARRAY Operations</title>
+</head>
+<body>
+    <script type="text/javascript">
+       var a=[10,20,30,40,50,60,70,80,90,100];
+       var b=new Array('a','b','c','d','e','f');
+       document.write("<br>Length of Array 1 is"+a.length);
+       document.write("<br>Type of array b is "+typeof(b));
+       document.write("<br>Convert array to String "+b.toString());
+       var v=a.at(6);
+       document.write("<br>Charector at(6) "+v);
+       a.push(111);
+       b.push('s','m','c');
+       document.write("<br>After push arrays are");
+       document.write("<br>a is--------->"+a);
+       document.write("<br>b is--------->"+b);
+       a.pop();
+       b.pop();
+       document.write("<br>After single pop arrays are");
+       document.write("<br>a is---------->"+a);
+       document.write("<br>b is---------->"+b);
+       a.shift();
+       b.shift();
+       document.write("<br>After single Shift arrays are");
+       document.write("<br>a is---------->"+a);
+       document.write("<br>b is---------->"+b);
+       a.unshift(1000);
+       b.unshift('z');
+       document.write("<br>After single unShift arrays are");
+       document.write("<br>a is---------->"+a);
+       document.write("<br>b is---------->"+b);
+       delete a[3];
+       delete b[3];
+       document.write("<br>After delete arrays are");
+       document.write("<br>a is---------->"+a);
+       document.write("<br>b is---------->"+b);
+       var ab=a.concat(b);
+       document.write("<br>After concat arrays are");
+       document.write("<br>ab is---------->"+ab);
+      a.splice(2,0,2024,2025,2026);
+      document.write("<br>After splice arrays are");
+       document.write("<br>a is---------->"+a);
+       a.splice(0,2);
+      document.write("<br>After splice arrays are");
+       document.write("<br>a is---------->"+a);
+       
+    </script>
+</body>
+</html>

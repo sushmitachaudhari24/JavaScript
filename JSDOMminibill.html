@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bill</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script type="text/javaScript">
+        var r,q,t;
+        function getrate()
+        {
+           r=parseInt(document.getElementById("rate").value);
+        }
+        function getqty()
+        {
+            q=parseInt(document.getElementById("qty").value);
+            t=r*q;
+            document.getElementById("total").value=" "+t;
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <h1>Calculate Bill</h1>
+        <form>
+            <input type="text" id="rate" placeholder="Rate" onkeyup="getrate()">
+            <input type="text" id="qty"  placeholder="Quantity"  onkeyup="getqty()">
+            <input type="text" id="total" placeholder="Total Bill" >
+        </form>
+    </div>
+</body>
+</html>

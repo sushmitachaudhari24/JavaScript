@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddApp JS</title>
+    <style>
+        .box{
+            margin: auto;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        input{
+            width: 90%;
+            margin: auto;
+            padding: 5px;
+        }
+        #btn{
+            background-color: darkgreen;
+            color: white;
+            width: 95%;
+            border: 0px;
+        }
+    </style>
+    <script type="text/javaScript">
+     function getresult()
+     {
+        var a=parseInt(document.getElementById("v1").value);
+        var b=parseInt(document.getElementById("v2").value); 
+        document.getElementById("v3").value=" "+(a+b);
+     }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <center><h3>Addition</h3></center>
+        <form>
+            <input type="text" id="v1">
+            <!-- <input type="text" id="v2" onkeyup="getresult()" >-->
+            <input type="text" id="v2" >
+            <input type="text" id="v3">
+            <input type="button" value="Get Result" id="btn" onclick="getresult()">
+        </form>
+    </div>
+</body>
+</html>

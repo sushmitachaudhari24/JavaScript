@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get UserInput By Using DOM</title>
+    <script type="text/javaScript">
+      function helo()
+      {
+        var n=document.getElementById("name").value;
+       alert("Good Mornig "+n);
+      }
+     </script>
+</head>
+<body>
+    <form name="form">
+    Enter Name :&nbsp;&nbsp;<input type="text" id="name" value="">
+    <input type="button" onclick="helo()" value="PrintName"/>
+    </form>
+   
+</body>
+</html>
