@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(169, 253, 169);
+}
+.canvas{
+    width: 600px;
+    height: 500px;
+    /*  border: 1px solid black; */
+    margin:50px auto;
+    
+}
+.canvas h2{
+    padding: 8px;
+    margin: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.canvas .button{
+  
+    border: 1px solid rgb(21, 21, 21);
+   display: inline-block;
+}
+.canvas #crimson{
+    background-color: crimson;
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+}
+.canvas #white{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
+.canvas #lightblue{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+}
+.canvas #orange{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+.canvas #darkgreen{
+    background-color: darkgreen;
+    width:100px;
+    height: 100px;
+    margin-left: 100px;
+}
+.canvas #violet{
+    background-color: violet;
+    width:100px;
+    height: 100px;
+}
+.canvas #lightcoral{
+    background-color: lightcoral;
+    width:100px;
+    height: 100px;
+   
+}
+.canvas #black{
+    background-color: black;
+    width:100px;
+    height: 100px;
+  
+}
